@@ -129,7 +129,9 @@ cachetools==5.2.0 \
 celery[redis]==5.2.7 \
     --hash=sha256:138420c020cd58d6707e6257b6beda91fd39af7afde5d36c6334d175302c0e14 \
     --hash=sha256:fafbd82934d30f8a004f81e8f7a062e31413a23d444be8ee3326553915958c6d
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   celery
 certifi==2020.11.8 \
     --hash=sha256:1f422849db327d534e3d0c5f02a263458c3955ec0aae4ff09b95f195c59f4edd \
     --hash=sha256:f05def092c44fbf25834a51509ef6e631dc19765ab8a57b4e7ab85531f0a9cf4
@@ -209,7 +211,9 @@ coverage[toml]==5.3 \
     --hash=sha256:cb7df71de0af56000115eafd000b867d1261f786b5eebd88a0ca6360cccfaca7 \
     --hash=sha256:cedb2f9e1f990918ea061f28a0f0077a07702e3819602d3507e2ff98c8d20636 \
     --hash=sha256:e8caf961e1b1a945db76f1b5fa9c91498d15f545ac0ababbe575cfab185d3bd8
-    # via pytest-cov
+    # via
+    #   coverage
+    #   pytest-cov
 cython==0.29.32 \
     --hash=sha256:061e25151c38f2361bc790d3bcf7f9d9828a0b6a4d5afa56fbed3bd33fb2373a \
     --hash=sha256:06be83490c906b6429b4389e13487a26254ccaad2eef6f3d4ee21d8d3a4aaa2b \
@@ -520,7 +524,9 @@ markupsafe==1.1.1 \
 markus[datadog]==4.0.1 \
     --hash=sha256:0b1492d896defe2ebaaa3fbe384b0b14c9d2d7ed28d579b655b9146d7451f069 \
     --hash=sha256:89d27d8948b771bfd475a0324c29b907f10551050b0673ca9b3439c3af943d57
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   markus
 maxminddb==2.2.0 \
     --hash=sha256:e37707ec4fab115804670e0fb7aedb4b57075a8b6f80052bdc648d3c005184e5
     # via
@@ -723,6 +729,7 @@ redis[hiredis]==4.1.4 \
     # via
     #   -r requirements.in
     #   celery
+    #   redis
 requests==2.28.1 \
     --hash=sha256:7c5599b102feddaa661c826c56ab4fee28bfd17f5abca1ebbe3e7f19d7c97983 \
     --hash=sha256:8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349
@@ -894,7 +901,9 @@ shapely[vectorized]==1.8.4 \
     --hash=sha256:e018163500109ab4c9ad51d018ba28abb1aed5b0451476859e189fbb00c46c7b \
     --hash=sha256:eac2d08c0a02dccffd7f836901ea1d1b0f8e7ff3878b2c7a45443f0a34e7f087 \
     --hash=sha256:f6801a33897fb54ce39d5e841214192ecf95f4ddf8458d17e196a314fefe43bb
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   shapely
 simple-pid==1.0.1 \
     --hash=sha256:60d6b3a7c3f19734d33bbc5938293c4924d7cfea74176def03306057b3f99524 \
     --hash=sha256:99254d8f9a630062264ce4842ef1e90443558f336697268d16b9de52d3baec0b
@@ -1217,9 +1226,9 @@ zope-interface==5.2.0 \
     #   pyramid
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==22.0.3 \
-    --hash=sha256:c146f331f0805c77017c6bb9740cec4a49a0d4582d0c3cc8244b057f83eca359 \
-    --hash=sha256:f29d589df8c8ab99c060e68ad294c4a9ed896624f6368c5349d70aa581b333d0
+pip==23.3 \
+    --hash=sha256:bb7d4f69f488432e4e96394612f43ab43dd478d073ef7422604a570f7157561e \
+    --hash=sha256:bc38bb52bc286514f8f7cb3a1ba5ed100b76aaef29b521d48574329331c5ae7b
     # via pip-tools
 setuptools==59.6.0 \
     --hash=sha256:22c7348c6d2976a52632c67f7ab0cdf40147db7789f9aed18734643fe9cf3373 \
